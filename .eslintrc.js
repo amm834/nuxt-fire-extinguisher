@@ -15,6 +15,7 @@ module.exports = {
   plugins: [],
   // add your custom rules here
   rules: {
-    'object-shorthand': 0
+    'object-shorthand': 0,
+    'eqeqeq': false,
   }
 }

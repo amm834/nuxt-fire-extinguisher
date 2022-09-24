@@ -7,8 +7,10 @@
       <b-col>
         <h1>{{ product.title }}</h1>
         <p>{{ product.description }}</p>
-        <b-button variant="danger" v-b-modal.modal-1>Rent</b-button>
-        <RentModal/>
+        <!--        add item here-->
+        <RentModal
+          :product="product"
+        />
       </b-col>
     </b-row>
     <div>

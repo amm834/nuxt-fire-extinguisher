@@ -4,7 +4,7 @@
       <NuxtLink to="/" class="text-light">Firegii</NuxtLink>
       <div class="ml-auto d-flex flex-row">
         <NuxtLink to="/products" class="text-light">Products</NuxtLink>
-        <NuxtLink to="/" class="text-white mx-4">My Items</NuxtLink>
+        <NuxtLink to="/items" class="text-white mx-4">My Items</NuxtLink>
       </div>
     </b-nav>
   </div>
