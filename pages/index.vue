@@ -1,6 +1,5 @@
 <template>
   <main>
-    <nav-bar/>
     <b-container>
       <hero-page></hero-page>
       <card-view
