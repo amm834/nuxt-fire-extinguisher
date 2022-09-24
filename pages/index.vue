@@ -6,19 +6,25 @@
       :key="idx"
       :largeCards="largeCards"
     />
+    <small-card-view
+      v-for="smallCard in smallCards"
+      :key="smallCard.id"
+      :smallCards="smallCard"
+    />
   </b-container>
 </template>
 
 <script>
 import HeroPage from '~/components/Hero'
-import { largeCardSections } from '~/assets/data'
+import { largeCardSections, smallCardSections } from '~/assets/data'
 
 export default {
   name: 'IndexPage',
   components: { HeroPage },
   data: () => {
     return {
-      largeCards: largeCardSections
+      largeCards: largeCardSections,
+      smallCards: smallCardSections
     }
   }
 }
