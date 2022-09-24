@@ -24,6 +24,7 @@ import { useProductsStore } from '@/store/products'
 
 export default {
   name: 'ItemPage',
+  layout: 'item',
   computed: {
     ...mapState(useProductsStore, ['myRentals'])
   }
