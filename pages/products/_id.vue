@@ -7,7 +7,8 @@
       <b-col>
         <h1>{{ product.title }}</h1>
         <p>{{ product.description }}</p>
-        <b-button variant="danger">Rent</b-button>
+        <b-button variant="danger" v-b-modal.modal-1>Rent</b-button>
+        <RentModal/>
       </b-col>
     </b-row>
     <div>
