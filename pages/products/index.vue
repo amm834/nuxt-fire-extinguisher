@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav-bar/>
+    <nav-bar></nav-bar>
     <b-container>
       <card-view
         v-for="(largeCards,idx) in largeCards.slice(0,1)"

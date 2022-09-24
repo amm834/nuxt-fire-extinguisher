@@ -7,11 +7,13 @@
         :key="card.id"
         class="mb-3"
       >
-        <img
-          class="w-100 h-100"
-          :src="require(`~/assets/images/fires/images/${card.image}`)"
-          alt="fe"
-        />
+       <NuxtLink :to="`/products/${card.id}`"   >
+         <img
+           class="w-100 h-100"
+           :src="require(`~/assets/images/fires/images/${card.image}`)"
+           alt="fe"
+         />
+       </NuxtLink>
       </b-col>
     </b-row>
   </div>

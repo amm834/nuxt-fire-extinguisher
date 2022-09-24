@@ -7,17 +7,19 @@
         v-for="card in largeCards.cards"
         :key="card.id"
       >
-        <b-card
-          :title="card.title"
-          img-alt="Image"
-          :img-src="require(`~/assets/images/fires/images/${card.image}`)"
-          img-top
-          tag="article"
-          style="max-width: 20rem;"
-          class="mb-2"
-        >
-          <b-card-text>{{ card.snippet }}</b-card-text>
-        </b-card>
+        <NuxtLink :to="`/products/${card.id}`" class="text-decoration-none">
+          <b-card
+            :title="card.title"
+            img-alt="Image"
+            :img-src="require(`~/assets/images/fires/images/${card.image}`)"
+            img-top
+            tag="article"
+            style="max-width: 20rem;"
+            class="mb-2"
+          >
+            <b-card-text>{{ card.snippet }}</b-card-text>
+          </b-card>
+        </NuxtLink>
       </b-col>
     </b-row>
 
